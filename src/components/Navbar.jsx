@@ -14,7 +14,7 @@ const Nav = () => {
 <NavContainer> 
       <div className='nav-center'>
         <div className='nav-header'> 
-          <Link to='/' className='m-2 my-4'>
+          <Link to='/' className='logo my-4'>
             <img src={logo} width={50} height={70} className='max-h-full m-2 object-cover w-full h-full ' alt='comfy sloth' />
           </Link> 
           <button type='button' className='nav-toggle' onClick={openSidebar}>
@@ -53,10 +53,14 @@ const NavContainer = styled.nav`
     margin: 0 auto;
     max-width: var(--max-width);
   }
+  .logo {
+    margin: 1rem;
+  }
   .nav-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top:0.5rem;
     img {
       width: 175px;
       margin-left: -15px;
